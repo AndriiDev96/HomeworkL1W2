@@ -1,6 +1,6 @@
 # HomeworkSF
 
-![Screenshot4](https://github.com/AndriiDev96/HomeworkL1W2/tree/developer/img/1.png)
+![1](https://github.com/AndriiDev96/HomeworkL1W2/blob/developer/img/1.png)
 
 **Result in the console and notification(alert)**
 
