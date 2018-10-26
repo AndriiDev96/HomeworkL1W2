@@ -1,6 +1,6 @@
 //-------------------1.------------------------
 //Function that do currency converter from USD to UAH, and reverse (1 USD to 26 UAH).
-
+//-------------------1.1------------------------
 /* var dolars = prompt("Enter the amount of dolars, please!");
 
 var convert = function(){
@@ -12,23 +12,55 @@ alert("It is " + convert(dolars) + " UAH"); */
 
 
 //Function that returns min and max numbers.
-/* 
- var  array = [],
+//-------------------1.2.1------------------------
+
+ /* var  array = [],
       nimNum,
       maxNum;
 
-while(true){
-  var value = prompt("Enter the number, please!")
+function  checkInputNum(array){
 
-  if(value === "" || value == 0 || value === null || isNaN(value)) break;
-  array.push(value);  
+  while(true){
+    var value = prompt("Enter the number, please!")
+  
+    if(value === "" || value == 0 || value === null || isNaN(value)) break;
+    array.push(value);  
+  }
 }
+
+checkInputNum(array);
+
 
 minNum = Math.min.apply(null, array);
 maxNum = Math.max.apply(null, array);
 alert("[" + array + "]" + "\n" + "min: " + minNum + " max: " + maxNum); */
 
+//-------------------1.2.2------------------------
+/* var  array = [2, 3, 43, 34, 5, -6, -767, 23, 2],
+      max = array[0],
+      min = max;
+
+ function searchMaxMin(){
+  
+  for(var i = 0; i < array.length; i++){
+       
+    if(array[i] > max){
+      max = array[i];
+    }
+
+    if(min > array[i]){
+      min = array[i];
+    }
+  }  
+  return min, max;
+ }
+
+ searchMaxMin(array);
+ console.log("max: " + max + " | " + " min: " + min); */
+ 
+
 //Write a function that returns average number of values. Do not use Math object. For i.e. [1,4,2] should return [2.33].
+//-------------------1.3------------------------
 
 /* var array = [1, 4, 2];
 
@@ -134,6 +166,6 @@ func(arr); */
   return n <= 1 ? n : fibonacci(n - 1) + fibonacci(n - 2); 
 }
 
-console.log(fibonacci(5));
+console.log(fibonacci(12));
 console.log(fibonacci(23));
 console.log(fibonacci(15)); */
