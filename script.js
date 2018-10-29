@@ -30,7 +30,6 @@ function  checkInputNum(array){
 
 checkInputNum(array);
 
-
 minNum = Math.min.apply(null, array);
 maxNum = Math.max.apply(null, array);
 alert("[" + array + "]" + "\n" + "min: " + minNum + " max: " + maxNum); */
@@ -66,13 +65,12 @@ alert("[" + array + "]" + "\n" + "min: " + minNum + " max: " + maxNum); */
 
 var averageNum = function(){
   var i,
-      sum = 0;
+    sum = 0;
 
-      for(i = 0; i < array.length; i++){
-        sum += array[i] / array.length;
-      };
-
-      return sum;
+    for(i = 0; i < array.length; i++){
+      sum += array[i] / array.length;
+    };
+    return sum;
 }
 
 console.log(averageNum(array)); */
@@ -145,27 +143,34 @@ Object.keys(users).forEach(function(key) {
 
 //-------------------4.------------------------
 //Print in console using for. If you think this is simple talk - implement using recursive function.
-/* var arr = ['#', '##', '###', '####', '#####', '######', '#######', '########'];
 
-function func(arr, i){
-  if(i === undefined){
-    i = 0;
-  }
-  console.log(arr[i]);
-  i++;
-  
-  if(i != arr.length){
-    i = func(arr, i);
+//-------------------4.1------------------------
+/* function symbol(){
+  var str = " ";
+  var sym = '#';
+  for(var i = 0; i < 8; i++){ 
+   str += sym;
+   console.log(str);
   }
 }
-func(arr); */
+symbol();
+
+//-------------------4.2------------------------
+var symbolRec = function(n){
+  var sym = "#";
+  console.log(sym.repeat(n));
+  if(n < 8){
+    return symbolRec(n+1);
+  }else{
+    return n;
+  }
+}
+symbolRec(1); */
 
 //-------------------5.------------------------
 //You need create a function to generating fibonacci sequence. The function should receive n as input parameter.
-/* function fibonacci(n){
-  return n <= 1 ? n : fibonacci(n - 1) + fibonacci(n - 2); 
+/* var number = prompt("Please enter a value");
+ function fibonacci(number){
+  return number <= 1 ? number : fibonacci(number - 1) + fibonacci(number - 2); 
 }
-
-console.log(fibonacci(12));
-console.log(fibonacci(23));
-console.log(fibonacci(15)); */
+alert(fibonacci(number));  */
