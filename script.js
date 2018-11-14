@@ -1,14 +1,24 @@
 //-------------------1.------------------------
 //Function that do currency converter from USD to UAH, and reverse (1 USD to 26 UAH).
 //-------------------1.1------------------------
-/* var dolars = prompt("Enter the amount of dolars, please!");
+/* var converOption = prompt("Enter the convert option ( d - 'dollars -> uah' | | u - 'uah -> dallars' ).");
+const CURRENCY_VAl = 26;
 
-var convert = function(){
-  uah = 26;
-  return (dolars * uah);
+var exchanger = function(){
+  if(converOption == 'd'){
+    var dolars = prompt("Enter the amount of dollars, please!");
+    return `${dolars * CURRENCY_VAl} UAH`; 
+
+  }else if(converOption == 'u'){
+    var uah = prompt("Enter the amount of UAH, please!");
+    return `${uah / CURRENCY_VAl} USD`; 
+
+  }else{
+    return 'Error! Wron option.';
+  }
 }
 
-alert("It is " + convert(dolars) + " UAH"); */
+alert("It is " + exchanger(converOption)); */
 
 
 //Function that returns min and max numbers.
